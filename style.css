@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-
-
+/*Header*/
 header{
     display: flex;
     justify-content: space-around;
@@ -19,7 +18,6 @@ header{
 
 .navegation{
     width: 50vw;
-    
 }
 
 .list{
@@ -36,10 +34,38 @@ font-weight: 700;
 text-transform: uppercase;
 }
 
+/*Main*/
+
+.containerImg{
+display: flex;
+justify-content: space-evenly;
+margin-top: 2rem;
+}
+
+.boxInfo{
+    height: 40vh;
+    border:solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgDog{
+    width: 18vw;
+    height: 25vh;
+}
+
+p{
+    color: white;
+}
+
+
 
 /*WATCH - (max-width: 200px)*/
 
-@media (max-width: 200px){
+@media (min-width: 150px) and (max-width: 200px){
+    /*Header*/
 header, .list{
     display: flex;
     flex-direction: column;
@@ -51,6 +77,26 @@ header, .list{
 .logoHeader{
 width: 50vw;
 }
+/*Main*/
+.containerImg{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    }
+    .imgDog{
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .boxInfo{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
 
 /*MOBILE - (min-width: 201px) and (max-widht: 500px) */
@@ -68,6 +114,119 @@ width: 50vw;
     .logoHeader{
     width: 50vw;
     /* display: none;  ocultar imagem*/
+    }
+    }
 
+    /*TABLET - (min-width: 501px) and (max-width: 900px)*/
+
+    @media (min-width: 501px) and (max-width: 900px){
+        header{
+            display: flex;
+            background-color: green;
+            color: white;
+            height: 20vh;
+        }
+        .navegation{
+            width: 80vw;
+        }
+.list{
+    width: 100%;
+display: flex;
+justify-content: space-evenly;
+}
+.itemList{
+    font-size: 1rem;
+}
+        .logoHeader{
+        width: 15vw;
+        /* display: none;  ocultar imagem*/
+        }
     }
+
+        /*LAPTOP - (min-width: 901px) and (max-width: 1500px)*/
+
+        @media (min-width: 901px) and (max-width: 1500px){
+            header{
+                display: flex;
+                background-color: violet;
+                color: white;
+                height: 30vh;
+
+            }
+            .navegation{
+                width: 70vw;
+            }
+    .list{
+        width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     }
+    .itemList{
+        font-size: 1.2rem;
+    }
+            .logoHeader{
+            width: 15vw;
+            }
+        }
+
+
+/*DESKTOP - (min-width: 1501px) and (max-width: 1800px)*/
+
+@media (min-width: 1501px) and (max-width: 1800px){
+body{
+    background-color: #3F434D;
+}
+
+    header{
+        display: flex;
+        background-color: #1C1C1C;
+        color: white;
+        height: 40vh;
+    }
+    .navegation{
+        width: 60vw;
+    }
+.list{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+}
+.itemList{
+font-size: 2rem;
+}
+    .logoHeader{
+    width: 20vw;
+    }
+}
+
+/*DESKTOP - (min-width: 1801px) */
+
+@media (min-width: 1801px){
+    body{
+        background-color: violet;
+    }
+    
+        header{
+            display: flex;
+            background-color: pink;
+            color: black;
+            height: 40vh;
+        }
+        .navegation{
+            width: 60vw;
+        }
+    .list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    .itemList{
+    font-size: 3rem;
+    }
+        .logoHeader{
+        width: 20vw;
+        }
+    }
+    
+    
+
